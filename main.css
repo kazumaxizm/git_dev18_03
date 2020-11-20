@@ -106,3 +106,41 @@ blockquote cite {
   color: #888888;
   font-size: 0.9em;
 }
+
+#app_2{
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+#app_3{
+  max-width: 640px;
+  margin: 0 auto;
+  
+}
+
+
+.VueCarousel-slide {
+  
+  font-size:12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100px;
+  background:#ccc;
+  border-right:1px solid #FFF;
+  box-sizing:border-box;
+}
+
+#app_4{
+  max-width: 640px;
+  margin: 0 auto;
+  
+}
+
+#app_4 .item {
+  padding: 4px 8px;
+  transition: background-color 0.4s;
+  }
+#app_4 .is-active {
+  background: #ffeaea;
+  }

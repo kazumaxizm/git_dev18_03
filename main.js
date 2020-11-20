@@ -133,3 +133,34 @@ new Vue({
 
   }
 })
+
+var app2 = new Vue({
+  el: "#app_2",
+  components: {
+    'carousel': VueCarousel.Carousel,
+    'slide': VueCarousel.Slide
+  },
+});
+
+var app3 = new Vue({
+  el: '#app_3',
+  data: {
+    images: [
+      { url: "https://tshop.r10s.jp/book/cabinet/0111/4910056260111.jpg?fitin=160:168&composite-to=0,*|160:168", alt: "test1" },
+      { url: "https://tshop.r10s.jp/book/cabinet/0114/4910013350114.jpg?fitin=160:168&composite-to=0,*|160:168", alt: "test2" },
+      { url: "https://tshop.r10s.jp/book/cabinet/0213/4910045410213.jpg?fitin=160:168&composite-to=0,*|160:168", alt: "test3" },
+      { url: "https://tshop.r10s.jp/book/cabinet/0110/4910159850110.jpg?fitin=160:168&composite-to=0,*|160:168", alt: "test4" },
+      { url: "https://tshop.r10s.jp/book/cabinet/1209/4910024731209.jpg?fitin=160:168&composite-to=0,*|160:168", alt: "test4" }
+    ]
+  }
+})
+
+var app4 = new Vue({
+  el: '#app_4',
+  data: {
+    isChild: true,
+    isActive: true,
+    textColor: '#fff',
+    bgColor: 'green'
+  }
+})

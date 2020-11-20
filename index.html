@@ -70,10 +70,45 @@
       <p>「基礎から学ぶ Vue.js」を参考にしました。</p>
     </blockquote>
 
+
+    <br>
+    <hr>
+
+    <h2>ここからは遊び</h2>
+
+
+
   </div>
 
+  <div id="app_2">
+    <h3>・スライダー</h3>
+    <carousel>
+      <slide>Slide 1</slide>
+      <slide>Slide 2</slide>
+      <slide>Slide 3</slide>
+      <slide>Slide 4</slide>
+      <slide>Slide 5</slide>
+    </carousel>
+  </div>
+
+  <div id="app_3">
+    <h3>・画像表示（vue.jsのfor文を使って）</h3>
+    <img v-for="img in images" v-bind:src="img.url" v-bind:alt="img.alt">
+  </div>
+
+  <div id="app_4">
+    <h3>・動的に背景色つける</h3>
+    <button v-on:click="isActive=!isActive">クラスをとったり、つけたりするボタン</button>
+    <!-- クラスにハイフンを含む場合はシングルクォートで囲む -->
+    <p v-bind:class="{ child: isChild, 'is-active': isActive}" class="item">動的にクラスを付与できるテキスト</p>
+  </div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-carousel@0.18.0/dist/vue-carousel.min.js"></script>
   <script src="./main.js"></script>
+
 </body>
 
 </html>
